@@ -2,6 +2,8 @@
 
 > *"join us in saving lives"*
 
+**Live site:** [jenrum3ry.github.io/lozen-sanctuary](https://jenrum3ry.github.io/lozen-sanctuary/) *(custom domain coming soon: sacredspaceanimalrescue.com)*
+
 Website for [Sacred Space Animal Sanctuary & Rescue](https://sacredspaceanimalrescue.com) — a spiritual animal sanctuary founded in 2018 by Lozen BrownBear. This is a volunteer project built as part of my personal portfolio.
 
 Sacred Space is more than a rescue. It's a sanctuary of healing where abandoned, neglected, and forgotten animals receive care, dignity, and unconditional love — while Lozen's mission of spiritual art, community classes, and fundraising toward a permanent country sanctuary weaves it all together.
