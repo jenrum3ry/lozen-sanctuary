@@ -17,7 +17,7 @@ export default function GetInvolvedPage() {
         centered
       />
 
-      <p className="text-center text-[#f0ece4]/75 mb-20 text-lg leading-relaxed max-w-2xl mx-auto">
+      <p className="text-center text-[#2c1f14]/70 mb-20 text-lg leading-relaxed max-w-2xl mx-auto">
         Whether you open your home, offer your time, or invest in your own growth through our
         classes — every way you show up matters deeply to the animals and the mission.
       </p>
@@ -30,12 +30,12 @@ export default function GetInvolvedPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
-            <p className="text-[#f0ece4]/75 leading-relaxed mb-4">
+            <p className="text-[#2c1f14]/75 leading-relaxed mb-4">
               Fostering is one of the most powerful acts of love you can offer. By temporarily
               opening your home to an animal in need, you give them the space to heal in a safe,
               nurturing environment — and you free up capacity for Sacred Space to save more lives.
             </p>
-            <p className="text-[#9c98a8] text-sm leading-relaxed">
+            <p className="text-[#7a6555] text-sm leading-relaxed">
               Sacred Space provides guidance, support, and all necessary supplies. You provide the
               love, patience, and a safe space.
             </p>
@@ -47,8 +47,8 @@ export default function GetInvolvedPage() {
               "Willingness to follow care guidelines",
               "Open heart and open home",
             ].map((item) => (
-              <div key={item} className="flex items-center gap-3 text-[#f0ece4]/70 text-sm">
-                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-[#f5a623] to-[#00c9b1] shrink-0 flex items-center justify-center text-[#0d0b12] text-xs">
+              <div key={item} className="flex items-center gap-3 text-[#2c1f14]/70 text-sm">
+                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-[#c4622d] to-[#d4a843] shrink-0 flex items-center justify-center text-white text-xs">
                   ✓
                 </span>
                 {item}
@@ -61,7 +61,7 @@ export default function GetInvolvedPage() {
         </CTAButton>
       </section>
 
-      <div className="h-px bg-gradient-to-r from-transparent via-[#7b5ea7]/40 to-transparent mb-20" />
+      <div className="h-px bg-gradient-to-r from-transparent via-[#c4622d]/20 to-transparent mb-20" />
 
       {/* Volunteer */}
       <section className="mb-20">
@@ -69,7 +69,7 @@ export default function GetInvolvedPage() {
           <div className="text-5xl">🌿</div>
           <SectionHeader title="Volunteer" className="mb-0" />
         </div>
-        <p className="text-[#f0ece4]/75 leading-relaxed mb-8">
+        <p className="text-[#2c1f14]/75 leading-relaxed mb-8">
           There are many ways to contribute your time and skills. From hands-on animal care to
           community outreach, every volunteer role strengthens our mission.
         </p>
@@ -84,15 +84,15 @@ export default function GetInvolvedPage() {
           ].map((role) => (
             <div
               key={role.title}
-              className="p-4 rounded-xl bg-[#13101c] border border-[#7b5ea7]/20 hover:border-[#00c9b1]/40 transition-colors"
+              className="p-4 rounded-xl bg-[#f5ede0] border border-[#c4622d]/15 hover:border-[#7a9e7e]/40 transition-colors"
             >
               <h4
-                className="text-[#00c9b1] font-semibold mb-1 text-sm"
+                className="text-[#7a9e7e] font-semibold mb-1 text-sm"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 {role.title}
               </h4>
-              <p className="text-[#9c98a8] text-xs leading-relaxed">{role.desc}</p>
+              <p className="text-[#7a6555] text-xs leading-relaxed">{role.desc}</p>
             </div>
           ))}
         </div>
@@ -101,7 +101,7 @@ export default function GetInvolvedPage() {
         </CTAButton>
       </section>
 
-      <div className="h-px bg-gradient-to-r from-transparent via-[#7b5ea7]/40 to-transparent mb-20" />
+      <div className="h-px bg-gradient-to-r from-transparent via-[#c4622d]/20 to-transparent mb-20" />
 
       {/* Classes & Workshops */}
       <section className="mb-12">
@@ -109,17 +109,17 @@ export default function GetInvolvedPage() {
           <div className="text-5xl">✨</div>
           <SectionHeader title="Classes & Workshops" className="mb-0" />
         </div>
-        <div className="rounded-2xl p-8 bg-[#13101c] border border-[#7b5ea7]/30 mb-8">
-          <p className="text-[#f0ece4]/80 leading-relaxed mb-4">
+        <div className="rounded-2xl p-8 bg-[#f5ede0] border border-[#b8826e]/25 mb-8">
+          <p className="text-[#2c1f14]/75 leading-relaxed mb-4">
             Lozen offers classes and workshops designed to help people grow spiritually and embrace
             their unique talents and gifts. These gatherings are part of the broader Sacred Space
             mission — healing extends to humans too.
           </p>
-          <p className="text-[#9c98a8] text-sm leading-relaxed mb-6">
+          <p className="text-[#7a6555] text-sm leading-relaxed mb-6">
             Class schedules and topics are shared regularly on our Facebook page. Proceeds from
             classes and workshops support the animals in our care.
           </p>
-          <p className="text-[#9c98a8] text-sm italic">
+          <p className="text-[#7a6555] text-sm italic">
             Full class listings and booking coming soon.
           </p>
         </div>

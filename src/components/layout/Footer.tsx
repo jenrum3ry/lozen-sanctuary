@@ -10,7 +10,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#0d0b12] border-t border-[#7b5ea7]/20 mt-24">
+    <footer className="bg-[#f5ede0] border-t border-[#c4622d]/15 mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -21,12 +21,12 @@ export function Footer() {
             >
               Sacred Space
             </h3>
-            <p className="text-[#9c98a8] text-sm leading-relaxed mb-4">
+            <p className="text-[#7a6555] text-sm leading-relaxed mb-4">
               Animal Sanctuary & Rescue
               <br />
               Established 2018
             </p>
-            <p className="text-[#f0ece4]/60 text-sm italic">
+            <p className="text-[#2c1f14]/50 text-sm italic">
               &ldquo;join us in saving lives&rdquo;
             </p>
           </div>
@@ -34,7 +34,7 @@ export function Footer() {
           {/* Navigation */}
           <div>
             <h4
-              className="text-[#f0ece4] font-semibold mb-4 text-sm uppercase tracking-widest"
+              className="text-[#2c1f14] font-semibold mb-4 text-sm uppercase tracking-widest"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Navigate
@@ -44,7 +44,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[#9c98a8] text-sm hover:text-[#00c9b1] transition-colors duration-200"
+                    className="text-[#7a6555] text-sm hover:text-[#c4622d] transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -56,7 +56,7 @@ export function Footer() {
           {/* Connect */}
           <div>
             <h4
-              className="text-[#f0ece4] font-semibold mb-4 text-sm uppercase tracking-widest"
+              className="text-[#2c1f14] font-semibold mb-4 text-sm uppercase tracking-widest"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Connect
@@ -67,7 +67,7 @@ export function Footer() {
                   href="https://www.facebook.com/share/1EcCPftfHo/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#9c98a8] text-sm hover:text-[#00c9b1] transition-colors duration-200 flex items-center gap-2"
+                  className="text-[#7a6555] text-sm hover:text-[#c4622d] transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>📘</span> Facebook Page
                 </a>
@@ -75,7 +75,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:sacredspacesanctuary@email.com"
-                  className="text-[#9c98a8] text-sm hover:text-[#00c9b1] transition-colors duration-200 flex items-center gap-2"
+                  className="text-[#7a6555] text-sm hover:text-[#c4622d] transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>✉️</span> Contact Us
                 </a>
@@ -85,7 +85,7 @@ export function Footer() {
                   href="https://www.facebook.com/share/1EcCPftfHo/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#9c98a8] text-sm hover:text-[#f5a623] transition-colors duration-200 flex items-center gap-2"
+                  className="text-[#7a6555] text-sm hover:text-[#c4622d] transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>💜</span> Donate on Facebook
                 </a>
@@ -95,11 +95,11 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-[#7b5ea7]/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-[#9c98a8] text-xs">
+        <div className="mt-12 pt-8 border-t border-[#c4622d]/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-[#7a6555] text-xs">
             © {new Date().getFullYear()} Sacred Space Animal Sanctuary & Rescue. All rights reserved.
           </p>
-          <p className="text-[#9c98a8]/50 text-xs">
+          <p className="text-[#7a6555]/50 text-xs">
             For the forgotten. For the voiceless. For the healing. 🐾
           </p>
         </div>

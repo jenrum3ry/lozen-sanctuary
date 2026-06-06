@@ -20,11 +20,11 @@ export function CTAButton({
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-[#f5a623] to-[#00c9b1] text-[#0d0b12] hover:scale-105 hover:shadow-[0_0_24px_rgba(0,201,177,0.4)]",
+      "bg-gradient-to-r from-accent-terracotta to-accent-gold text-white hover:scale-105 hover:shadow-[0_4px_20px_rgba(196,98,45,0.35)]",
     outline:
-      "border border-[#7b5ea7] text-[#f0ece4] hover:border-[#00c9b1] hover:text-[#00c9b1] hover:shadow-[0_0_16px_rgba(0,201,177,0.2)]",
+      "border-2 border-accent-terracotta text-accent-terracotta hover:bg-accent-terracotta hover:text-white hover:shadow-[0_4px_16px_rgba(196,98,45,0.2)]",
     ghost:
-      "text-[#9c98a8] hover:text-[#f0ece4] underline-offset-4 hover:underline",
+      "text-text-muted hover:text-text-primary underline-offset-4 hover:underline",
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;
