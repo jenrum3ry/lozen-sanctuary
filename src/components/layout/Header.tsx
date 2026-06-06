@@ -19,7 +19,7 @@ export function Header() {
   const pathname = usePathname();
 
   const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0d0b12]/85 backdrop-blur-md border-b border-[#7b5ea7]/20">

@@ -7,7 +7,7 @@ import { CTAButton } from "./CTAButton";
 export function FundraisingThermometer() {
   const { goalAmount, currentAmount, campaignTitle, campaignDescription, donationLink } =
     fundraisingConfig;
-  const pct = Math.min((currentAmount / goalAmount) * 100, 100);
+  const pct = goalAmount > 0 ? Math.min((currentAmount / goalAmount) * 100, 100) : 0;
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
