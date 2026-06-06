@@ -18,8 +18,9 @@ const inter = Inter({
 });
 
 // Update siteUrl to sacredspaceanimalrescue.com once the custom domain is live.
-const siteUrl =
+const rawSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://jenrum3ry.github.io/lozen-sanctuary";
+const siteUrl = rawSiteUrl.endsWith("/") ? rawSiteUrl : `${rawSiteUrl}/`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
   description:
     "A sanctuary of healing where wounded bodies are nurtured, fearful hearts are restored, and spirits are given the opportunity to shine once again. Join us in saving lives.",
   icons: {
-    icon: "/favicon.jpg",
-    apple: "/favicon.jpg",
+    icon: "favicon.jpg",
+    apple: "favicon.jpg",
   },
   openGraph: {
     title: "Sacred Space Animal Sanctuary & Rescue",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Sacred Space Animal Sanctuary & Rescue",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "og-image.jpg",
         width: 959,
         height: 958,
         alt: "Sacred Space Animal Sanctuary and Rescue — join us in saving lives",
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sacred Space Animal Sanctuary & Rescue",
     description: "join us in saving lives",
-    images: ["/og-image.jpg"],
+    images: ["og-image.jpg"],
   },
 };
 
