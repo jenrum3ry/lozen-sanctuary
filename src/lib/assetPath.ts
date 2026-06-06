@@ -5,5 +5,13 @@ const base =
   (process.env.NODE_ENV === "production" ? "/lozen-sanctuary" : "");
 
 export function assetPath(path: string): string {
-  return `${base}${path}`;
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {
+    return path;
+  }
+  const cleanPath = path.startsWith("/") ? path : "/" + path;
+  if (base && cleanPath.startsWith(base)) {
+    return cleanPath;
+  }
+  return base + cleanPath;
 }
