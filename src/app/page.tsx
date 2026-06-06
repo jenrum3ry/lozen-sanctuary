@@ -13,11 +13,11 @@ export default function HomePage() {
         {/* Soft warm orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, #d4a843 0%, transparent 70%)" }} />
+            style={{ background: "radial-gradient(circle, var(--color-accent-gold) 0%, transparent 70%)" }} />
           <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full opacity-15"
-            style={{ background: "radial-gradient(circle, #c4622d 0%, transparent 70%)" }} />
+            style={{ background: "radial-gradient(circle, var(--color-accent-terracotta) 0%, transparent 70%)" }} />
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10"
-            style={{ background: "radial-gradient(circle, #7a9e7e 0%, transparent 70%)" }} />
+            style={{ background: "radial-gradient(circle, var(--color-accent-sage) 0%, transparent 70%)" }} />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto">

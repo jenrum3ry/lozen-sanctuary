@@ -41,17 +41,17 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5ede0;
+  background: var(--color-surface);
 }
 ::-webkit-scrollbar-thumb {
-  background: #c4622d;
+  background: var(--color-accent-terracotta);
   border-radius: 3px;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(196, 98, 45, 0.2);
-  color: #2c1f14;
+  background: color-mix(in srgb, var(--color-accent-terracotta) 20%, transparent);
+  color: var(--color-text-primary);
 }
 
 /* Gradient text utility */

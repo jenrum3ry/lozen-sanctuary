@@ -26,13 +26,13 @@ export function FundraisingThermometer() {
       <p className="text-[#7a6555] mb-8 leading-relaxed">{campaignDescription}</p>
 
       {/* Track */}
-      <div className="relative h-7 rounded-full bg-[#efe6d5] overflow-hidden border border-[#c4622d]/20 mb-4">
+      <div className="relative h-7 rounded-full bg-surface-raised overflow-hidden border border-accent-terracotta/20 mb-4">
         {/* Fill */}
         <div
           className="h-full rounded-full transition-all duration-1000 ease-out"
           style={{
             width: `${width}%`,
-            background: "linear-gradient(90deg, #d4a843 0%, #c4622d 40%, #7a9e7e 75%, #b8826e 100%)",
+            background: "var(--gradient-sacred-horizontal)",
           }}
         />
       </div>

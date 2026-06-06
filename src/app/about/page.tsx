@@ -17,8 +17,8 @@ export default function AboutPage() {
         centered
       />
 
-      <div className="space-y-6 text-[#2c1f14]/75 leading-relaxed text-base md:text-lg mb-20">
-        <p className="text-[#2c1f14] text-xl md:text-2xl font-medium leading-relaxed border-l-4 border-[#c4622d] pl-6 italic">
+      <div className="space-y-6 text-text-primary/75 leading-relaxed text-base md:text-lg mb-20">
+        <p className="text-text-primary text-xl md:text-2xl font-medium leading-relaxed border-l-4 border-accent-terracotta pl-6 italic">
           At Sacred Space Animal Sanctuary & Rescue, we believe every animal is a sacred soul
           deserving of safety, dignity, healing, and unconditional love.
         </p>
