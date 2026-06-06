@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CTAButton } from "@/components/ui/CTAButton";
+import { assetPath } from "@/lib/assetPath";
 
 export default function HomePage() {
   return (
@@ -29,7 +30,7 @@ export default function HomePage() {
           {/* Logo */}
           <div className="mx-auto mb-8 w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden glow-purple">
             <Image
-              src="/logo-dark.jpg"
+              src={assetPath("/logo-dark.jpg")}
               alt="Sacred Space Animal Sanctuary and Rescue"
               width={192}
               height={192}

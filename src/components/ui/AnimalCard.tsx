@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Animal } from "@/data/animals";
+import { assetPath } from "@/lib/assetPath";
 
 const speciesLabel: Record<Animal["species"], string> = {
   cat: "🐱 Cat",
@@ -13,7 +14,7 @@ export function AnimalCard({ animal }: { animal: Animal }) {
     <div className="group relative rounded-2xl overflow-hidden bg-[#13101c] border border-[#7b5ea7]/20 transition-all duration-300 hover:border-[#00c9b1]/50 hover:shadow-[0_0_24px_rgba(0,201,177,0.15)]">
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
-          src={animal.image}
+          src={assetPath(animal.image)}
           alt={animal.name}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
