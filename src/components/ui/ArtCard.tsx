@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Artwork } from "@/data/art";
+import { assetPath } from "@/lib/assetPath";
 
 const categoryColors: Record<Artwork["category"], string> = {
   art: "text-[#f5a623] border-[#f5a623]/40",
@@ -18,7 +19,7 @@ export function ArtCard({ artwork }: { artwork: Artwork }) {
     <div className="group relative rounded-2xl overflow-hidden bg-[#13101c] border border-[#7b5ea7]/20 transition-all duration-300 hover:border-[#f5a623]/50 hover:shadow-[0_0_24px_rgba(245,166,35,0.15)]">
       <div className="relative aspect-square overflow-hidden">
         <Image
-          src={artwork.image}
+          src={assetPath(artwork.image)}
           alt={artwork.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"

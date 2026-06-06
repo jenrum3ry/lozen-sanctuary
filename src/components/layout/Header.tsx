@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { assetPath } from "@/lib/assetPath";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -29,7 +30,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <div className="relative w-10 h-10 rounded-full overflow-hidden">
               <Image
-                src="/logo-light.jpg"
+                src={assetPath("/logo-light.jpg")}
                 alt="Sacred Space Animal Sanctuary"
                 fill
                 className="object-cover"
