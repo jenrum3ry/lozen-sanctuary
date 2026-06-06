@@ -18,19 +18,16 @@ export default function SupportPage() {
         centered
       />
 
-      {/* Lead copy */}
-      <p className="text-center text-[#f0ece4]/75 mb-16 text-lg leading-relaxed max-w-2xl mx-auto">
+      <p className="text-center text-[#2c1f14]/70 mb-16 text-lg leading-relaxed max-w-2xl mx-auto">
         Our work depends upon the generosity of compassionate hearts. Your support allows us to
         provide lifesaving veterinary care, emergency treatment, nutritious food, safe shelter, and
         the daily love each resident deserves.
       </p>
 
-      {/* Fundraising Thermometer */}
       <div className="mb-16">
         <FundraisingThermometer />
       </div>
 
-      {/* Why donate */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         {[
           {
@@ -51,24 +48,23 @@ export default function SupportPage() {
         ].map((item) => (
           <div
             key={item.title}
-            className="p-6 rounded-2xl bg-[#13101c] border border-[#7b5ea7]/20 text-center"
+            className="p-6 rounded-2xl bg-[#f5ede0] border border-[#c4622d]/15 text-center"
           >
             <div className="text-4xl mb-3">{item.icon}</div>
             <h3
-              className="text-[#f0ece4] font-semibold mb-2"
+              className="text-[#2c1f14] font-semibold mb-2"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {item.title}
             </h3>
-            <p className="text-[#9c98a8] text-sm leading-relaxed">{item.desc}</p>
+            <p className="text-[#7a6555] text-sm leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>
 
-      {/* Other ways to help */}
-      <div className="rounded-2xl p-8 bg-[#13101c] border border-[#00c9b1]/20 mb-16">
+      <div className="rounded-2xl p-8 bg-[#f5ede0] border border-[#7a9e7e]/25 mb-16">
         <h3
-          className="text-xl font-bold text-[#00c9b1] mb-6"
+          className="text-xl font-bold text-[#7a9e7e] mb-6"
           style={{ fontFamily: "var(--font-display)" }}
         >
           Other Ways to Support
@@ -81,7 +77,7 @@ export default function SupportPage() {
             { emoji: "📦", text: "Donate supplies: food, bedding, toys, litter, and medical items" },
             { emoji: "💬", text: "Share our story with people who might become fosters or volunteers" },
           ].map((item) => (
-            <li key={item.text} className="flex items-start gap-3 text-[#f0ece4]/75 text-sm leading-relaxed">
+            <li key={item.text} className="flex items-start gap-3 text-[#2c1f14]/70 text-sm leading-relaxed">
               <span className="text-xl shrink-0">{item.emoji}</span>
               <span>{item.text}</span>
             </li>
@@ -89,16 +85,15 @@ export default function SupportPage() {
         </ul>
       </div>
 
-      {/* Promise */}
       <div className="text-center">
-        <div className="h-px bg-gradient-to-r from-transparent via-[#7b5ea7] to-transparent mb-12" />
+        <div className="h-px bg-gradient-to-r from-transparent via-[#c4622d]/25 to-transparent mb-12" />
         <p
           className="text-2xl font-bold text-gradient mb-4"
           style={{ fontFamily: "var(--font-display)" }}
         >
           Together, we are creating something sacred.
         </p>
-        <p className="text-[#9c98a8] mb-8">
+        <p className="text-[#7a6555] mb-8">
           A refuge of hope. A place of healing. A living testament to the power of compassion.
         </p>
         <CTAButton href="https://www.facebook.com/share/1EcCPftfHo/" external variant="primary">

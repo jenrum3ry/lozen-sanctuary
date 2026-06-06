@@ -26,20 +26,18 @@ export default function ArtPage() {
         centered
       />
 
-      {/* Intro */}
       <div className="max-w-2xl mx-auto text-center mb-16">
-        <p className="text-[#f0ece4]/75 leading-relaxed mb-4">
+        <p className="text-[#2c1f14]/75 leading-relaxed mb-4">
           Lozen is not only the founder of Sacred Space — she is a spiritual artist and maker.
           Her creations range from sacred geometry fine art to handmade windchimes, window
           fascinators, crystal goods, and one-of-a-kind wearable pieces.
         </p>
-        <p className="text-[#9c98a8] text-sm">
+        <p className="text-[#7a6555] text-sm">
           Purchases from the shop directly support the animals in Lozen&apos;s care. Every item
           carries intention, crafted with love and spiritual purpose.
         </p>
       </div>
 
-      {/* Gallery by category */}
       {categories.map((cat) => {
         const items = artworks.filter((a) => a.category === cat);
         if (items.length === 0) return null;
@@ -60,8 +58,7 @@ export default function ArtPage() {
         );
       })}
 
-      {/* Classes callout */}
-      <div className="rounded-2xl p-8 md:p-10 bg-[#13101c] border border-[#7b5ea7]/30 mb-16 text-center glow-purple">
+      <div className="rounded-2xl p-8 md:p-10 bg-[#f5ede0] border border-[#b8826e]/25 mb-16 text-center warm-shadow">
         <div className="text-5xl mb-4">🎓</div>
         <h3
           className="text-2xl font-bold text-gradient mb-4"
@@ -69,7 +66,7 @@ export default function ArtPage() {
         >
           Classes & Workshops
         </h3>
-        <p className="text-[#f0ece4]/75 max-w-xl mx-auto mb-6 leading-relaxed">
+        <p className="text-[#2c1f14]/70 max-w-xl mx-auto mb-6 leading-relaxed">
           Lozen offers spiritual classes and workshops to help you discover and embrace your unique
           gifts and talents. Proceeds from classes support the sanctuary residents.
         </p>
@@ -78,9 +75,8 @@ export default function ArtPage() {
         </CTAButton>
       </div>
 
-      {/* Commission / Inquire */}
       <div className="text-center">
-        <p className="text-[#9c98a8] mb-6">
+        <p className="text-[#7a6555] mb-6">
           Interested in a piece? Custom orders, commissions, and availability are shared on
           Facebook.
         </p>

@@ -20,11 +20,11 @@ export function SectionHeader({
         {title}
       </h2>
       <div
-        className={`h-px bg-gradient-to-r from-[#f5a623] via-[#00c9b1] to-[#7b5ea7] ${centered ? "mx-auto w-32" : "w-24"}`}
+        className={`h-px bg-gradient-to-r from-[#d4a843] via-[#c4622d] to-[#7a9e7e] ${centered ? "mx-auto w-32" : "w-24"}`}
       />
       {subtitle && (
         <p
-          className="mt-4 text-[#9c98a8] text-lg italic"
+          className="mt-4 text-[#7a6555] text-lg italic"
           style={{ fontFamily: "var(--font-body)" }}
         >
           {subtitle}

@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
-@theme inline {
-  /* Brand colors */
-  --color-background: #0d0b12;
-  --color-surface: #13101c;
-  --color-surface-raised: #1a1628;
-  --color-accent-amber: #f5a623;
-  --color-accent-teal: #00c9b1;
-  --color-accent-purple: #7b5ea7;
-  --color-accent-lime: #84cc16;
-  --color-text-primary: #f0ece4;
-  --color-text-muted: #9c98a8;
+@theme {
+  /* Brand colors — warm earthy palette */
+  --color-background: #faf6f0;
+  --color-surface: #f5ede0;
+  --color-surface-raised: #efe6d5;
+  --color-accent-terracotta: #c4622d;
+  --color-accent-sage: #7a9e7e;
+  --color-accent-gold: #d4a843;
+  --color-accent-rose: #b8826e;
+  --color-text-primary: #2c1f14;
+  --color-text-muted: #7a6555;
 
   /* Fonts */
   --font-display: var(--font-cinzel), Georgia, serif;
   --font-body: var(--font-inter), system-ui, sans-serif;
 
   /* Gradients */
-  --gradient-sacred: linear-gradient(135deg, #f5a623 0%, #84cc16 33%, #00c9b1 66%, #7b5ea7 100%);
-  --gradient-sacred-horizontal: linear-gradient(90deg, #f5a623 0%, #84cc16 33%, #00c9b1 66%, #7b5ea7 100%);
-  --gradient-button: linear-gradient(90deg, #f5a623 0%, #00c9b1 100%);
-  --gradient-hero: radial-gradient(ellipse at center top, rgba(123, 94, 167, 0.25) 0%, transparent 60%),
-    radial-gradient(ellipse at bottom left, rgba(245, 166, 35, 0.15) 0%, transparent 50%);
+  --gradient-sacred: linear-gradient(135deg, #d4a843 0%, #c4622d 40%, #7a9e7e 70%, #b8826e 100%);
+  --gradient-sacred-horizontal: linear-gradient(90deg, #d4a843 0%, #c4622d 40%, #7a9e7e 75%, #b8826e 100%);
+  --gradient-button: linear-gradient(90deg, #c4622d 0%, #d4a843 100%);
+  --gradient-hero: radial-gradient(ellipse at top center, rgba(196, 98, 45, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom left, rgba(212, 168, 67, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at top right, rgba(122, 158, 126, 0.08) 0%, transparent 50%);
 }
 
 html {
@@ -29,8 +30,8 @@ html {
 }
 
 body {
-  background-color: #0d0b12;
-  color: #f0ece4;
+  background-color: #faf6f0;
+  color: #2c1f14;
   font-family: var(--font-inter), system-ui, sans-serif;
   min-height: 100vh;
 }
@@ -40,17 +41,17 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d0b12;
+  background: #f5ede0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7b5ea7;
+  background: #c4622d;
   border-radius: 3px;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(123, 94, 167, 0.4);
-  color: #f0ece4;
+  background: rgba(196, 98, 45, 0.2);
+  color: #2c1f14;
 }
 
 /* Gradient text utility */
@@ -61,15 +62,15 @@ body {
   background-clip: text;
 }
 
-/* Glow utilities */
-.glow-teal {
-  box-shadow: 0 0 20px rgba(0, 201, 177, 0.25);
+/* Warm shadow utilities */
+.warm-shadow {
+  box-shadow: 0 4px 24px rgba(196, 98, 45, 0.12);
 }
-.glow-purple {
-  box-shadow: 0 0 20px rgba(123, 94, 167, 0.3);
+.warm-shadow-lg {
+  box-shadow: 0 8px 40px rgba(196, 98, 45, 0.16);
 }
-.glow-amber {
-  box-shadow: 0 0 20px rgba(245, 166, 35, 0.25);
+.sage-shadow {
+  box-shadow: 0 4px 24px rgba(122, 158, 126, 0.2);
 }
 
 /* Gradient border utility */
